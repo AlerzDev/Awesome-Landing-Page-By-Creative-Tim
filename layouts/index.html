@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{ partial "head.html" . }}
+	<body class="landing-page landing-page1">
+		{{ partial "nav.html" . }}
+		<div class="wrapper">
+			{{ partial "parallax.html" . }}
+			<!-- Sections Landing Page -->
+			<!-- NOTE: Change the order of sections or you can comment it -->
+			{{ partial "section_clients" . }}
+			{{ partial "section_presentation" . }}
+			{{ partial "section_demo" . }}
+			{{ partial "section_features" . }}
+			{{ partial "section_testimonial" . }}
+			{{ partial "section_no_padding" . }}
+			{{ partial "footer.html" . }}
+		</div>
+		{{ partial "scripts.html" . }}
+	</body>
+
+</html>
