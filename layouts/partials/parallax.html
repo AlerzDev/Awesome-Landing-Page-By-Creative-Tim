@@ -1,13 +1,13 @@
 <div class="parallax filter-gradient blue" data-color="blue">
     {{ range .Site.Params.parallax_settings }}
     <div class="parallax-background">
-        <img class="parallax-background-image" src="{{ .Site.BaseURL }}img/template/bg3.jpg">
+        <img class="parallax-background-image" src="{{ .img_background}}">
     </div>
     <div class= "container">
         <div class="row">
             <div class="col-md-5 hidden-xs">
                 <div class="parallax-image">
-                    <img class="phone" src="{{ .Site.BaseURL }}img/template/iphone3.png" style="margin-top: 20px"/>
+                    <img class="phone" src="{{ .img_principal}}" style="margin-top: 20px"/>
                 </div>
             </div>
             

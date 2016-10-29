@@ -1,12 +1,14 @@
 <div class="section section-no-padding">
     <div class="parallax filter-gradient blue" data-color="blue">
+        {{ range .Site.Params.no_padding_settings }}
         <div class="parallax-background">
-            <img class ="parallax-background-image" src="{{ .Site.BaseURL }}img/template/bg3.jpg"/>
+            <img class ="parallax-background-image" src="{{ .img_background }}"/>
         </div>
         <div class="info">
-            <h1>Download this landing page for free!</h1>
-            <p>Beautiful multipurpose bootstrap landing page.</p>
-            <a href="http://www.creative-tim.com/product/awesome-landing-page" class="btn btn-neutral btn-lg btn-fill">DOWNLOAD</a>
+            <h1>{{ .title }}</h1>
+            <p>{{ .text }}</p>
+            <a href="{{ .btn_link }}" class="btn btn-neutral btn-lg {{ .btn_type }}">{{ .btn_text }}</a>
         </div>
+        {{end}}
     </div>
 </div>

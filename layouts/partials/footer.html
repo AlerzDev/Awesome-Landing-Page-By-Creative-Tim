@@ -2,41 +2,26 @@
     <div class="container">
         <nav class="pull-left">
             <ul>
+                {{ range .Site.Params.add_feature}}
                 <li>
                     <a href="#">
-                    Home
+                    {{ .title }}
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                    Company
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    Blog
-                    </a>
-                </li>
+                {{end}}
             </ul>
         </nav>
         <div class="social-area pull-right">
+        {{ range .Site.Params.add_social_icon}}
             <a class="btn btn-social btn-facebook btn-simple">
-            <i class="fa fa-facebook-square"></i>
+                <i class="fa {{ .icon}}"></i>
             </a>
-            <a class="btn btn-social btn-twitter btn-simple">
-            <i class="fa fa-twitter"></i>
-            </a>
-            <a class="btn btn-social btn-pinterest btn-simple">
-            <i class="fa fa-pinterest"></i>
-            </a>
+        {{end}}
         </div>
         <div class="copyright">
-            &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love
+            {{ range .Site.Params.footer_settings}}
+            &copy; {{ .year }} <a href="{{ .name_link }}">{{ .name_create }}</a>, {{ .text}}
+            {{end}}
         </div>
     </div>
 </footer>

@@ -4,7 +4,7 @@ languageCode = "es-mx"
 
 ##################==> menu settings <==##################
 [[params.menu_settings]]
-	logo = "sd"
+	logo = "img/logo.png"
 	text = "TepacheHackLab"
 
 #Add items menu
@@ -26,12 +26,18 @@ languageCode = "es-mx"
     fa   = "fa-youtube"
     weight = 3
 
+[[params.menu]]
+    name = "YouTube"
+    url  = "https://www.youtube.com/watch?v=FVjCjC4zDtQ"
+    fa   = "fa-youtube"
+    weight = 3
+
 ##########################################################
 ################==> parallax settings  <==################
 [[ params.parallax_settings]]
-	img_background = ""
-	img_principal  = ""
-	title          = "TepacheHackLab"
+	img_background = "img/template/bg3.jpg"
+	img_principal  = "img/teapcahe.png"
+	title          = "Comparte con el mundo"
 	text           = "Esto es una prueba en la cual se muestra una breve explicación de que es esto y como se usa esto para aquello que no se que se jaja ya se me olvido :D"
 
 #You can add buttons. Look at the example
@@ -89,6 +95,103 @@ languageCode = "es-mx"
 	link = ""
 
 ##########################################################
+############==> presentation settings  <==################
+[[ params.presentation_settings]]
+	title = "Esto es un titulo"
+	img   = "img/template/mac.png" 
+	text1 = "esto es un parrafo 1"
+	text2 = "esto es un parrafo 2"
+
+##########################################################
+#################==> demo settings  <==###################
+[[ params.demo_settings ]]
+	title        = "Esto es un titulo"
+	text         = "esto es un texto para que es un parrafo jeje para que no se we :D"
+	text_button  = "Esto es un boron amiguito :D"
+	link         = ""
+
+[[ params.add_item ]]
+	img = "img/template/examples/home_33.jpg"
+
+[[ params.add_item ]]
+	img = "img/template/examples/home_22.jpg"
+
+[[ params.add_item ]]
+	img = "img/template/examples/home_11.jpg"
+##########################################################
+#################==> features settings  <==###################
+[[ params.features_settings]]
+	title     = "Esto es un titulo"
+
+[[ params.add_feature]]
+	title = "esto es u titulo"
+	text  = "blablablabla"
+	icon  = "pe-7s-note2"
+
+[[ params.add_feature]]
+	title = "esto es otro titulo"
+	text  = "otro blablablabla"
+	icon  = "pe-7s-bell"
+
+[[ params.add_feature]]
+	title = "esto es de nuevo un titulo"
+	text  = "de nuevo otro blablabla"
+	icon  = "pe-7s-graph1"
+
+##########################################################
+#################==> testimonial settings  <==###################
+[[ params.testimonial_settings]]
+	title = "Este es la seccion de testimonios"
+
+[[ params.add_testimonial]]
+	img  = "img/faces/face-4.jpg"
+	name = "Alejandro Lemus"
+	text = "Hola soy Alejandro Lemus"
+	position = 1
+
+[[ params.add_testimonial]]
+	img  = "img/faces/face-4.jpg"
+	name = "Alejandro Santoyo"
+	text = "Hola soy Alejandro Santoyo"
+	position = 2
+
+[[ params.add_testimonial]]
+	img  = "img/faces/face-4.jpg"
+	name = "Edgar Santoyo"
+	text = "Hola soy Edgar moises"
+	position = 3
+
+##########################################################
+#################==> no padding settings  <==###################
+[[ params.no_padding_settings]]
+	img_background  = "img/template/bg3.jpg"
+	title       = "Esto es otro titulo"
+	text        = "esto es un texto de prueba para ver que funciona todo correctamente"
+	btn_type    = "btn-fill"
+	btn_link    = "https://www.facebook.com/tepachehacklab/?fref=ts"
+	btn_text    = "Esto es un texto para el boton"
+
+##########################################################
+#################==> footer settings  <==###################
+[[ params.footer_settings]]
+    year 		= "2016" 
+	name_create = "TeacheHackLab"
+	name_link   = "https://www.facebook.com/tepachehacklab/?fref=ts"
+	text        = "Hecho con amor <3"
+
+[[ params.add_social_icon]]
+	icon = "fa-facebook-square"
+	link = "https://www.facebook.com/tepachehacklab/?fref=ts"
+
+[[ params.add_social_icon]]
+	icon = "fa-twitter"
+	link = "https://www.facebook.com/tepachehacklab/?fref=ts"
+
+[[ params.add_social_icon]]
+	icon = "fa-github"
+	link = "https://www.facebook.com/tepachehacklab/?fref=ts"
+
+
 
 
 
