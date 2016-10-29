@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-transparent navbar-top" role="navigation">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -10,36 +11,29 @@
                 </button>
                 <a href="http://www.creative-tim.com">
                     <div class="logo-container">
-                        <div class="logo">
-                            hola
-                        </div>
-                        <div class="brand">
-                            Creative Tim
-                        </div>
+                        {{ range .Site.Params.menu_settings }}
+                            <div class="logo">
+                                {{ .logo }}
+                            </div>
+                        
+                            <div class="brand">
+                                {{ .text }}
+                            </div>
+                        {{end}}
                     </div>
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="example" >
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#">
-                    <i class="fa fa-facebook-square"></i>
-                    Like
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <i class="fa fa-twitter"></i>
-                    Tweet
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <i class="fa fa-pinterest"></i>
-                    Pin
-                    </a>
-                </li>
+                {{ range .Site.Params.menu }}
+                    <li>
+                        <a href="{{ .url }}">
+                            <i class="fa {{ .fa }}"></i>
+                            {{ .name }}
+                        </a>
+                    </li>
+                {{end}}
             </ul>
         </div>
         <!-- /.navbar-collapse -->

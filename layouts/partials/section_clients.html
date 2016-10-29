@@ -1,17 +1,16 @@
 <div class="section section-gray section-clients">
     <div class="container text-center">
-        <h4 class="header-text">Friends in high places</h4>
+        {{ range .Site.Params.clients_settings}}
+        <h4 class="header-text">{{ .title }}</h4>
         <p>
-            Build customer confidence by listing your users! Anyone who has used your service and has been pleased with it should have a place here! From Fortune 500 to start-ups, all your app enthusiasts will be glad to be featured in this section. Moreover, users will feel confident seing someone vouching for your product!<br>
+            {{ .text }}<br>
         </p>
+        {{end}}
         <div class="logos">
             <ul class="list-unstyled">
-                <li ><img src="{{ .Site.BaseURL }}img/logos/adobe.png"/></li>
-                <li ><img src="{{ .Site.BaseURL }}img/logos/zendesk.png"/></li>
-                <li ><img src="{{ .Site.BaseURL }}img/logos/ebay.png"/></i>
-                <li ><img src="{{ .Site.BaseURL }}img/logos/evernote.png"/></li>
-                <li ><img src="{{ .Site.BaseURL }}img/logos/airbnb.png"/></li>
-                <li ><img src="{{ .Site.BaseURL }}img/logos/zappos.png"/></li>
+                {{ range .Site.Params.add_logo_cliente}}
+                    <li ><img src="{{ .img }}"/></li>
+                {{end}}
             </ul>
         </div>
     </div>

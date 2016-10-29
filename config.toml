@@ -1,3 +1,98 @@
 baseurl = "http://tepachehacklab.com/"
 title = "TepacheHackLab"
 languageCode = "es-mx"
+
+##################==> menu settings <==##################
+[[params.menu_settings]]
+	logo = "sd"
+	text = "TepacheHackLab"
+
+#Add items menu
+[[params.menu]]
+    name = "Facebook"
+    url  = "https://www.facebook.com/tepachehacklab/?fref=ts"
+    fa   = "fa-facebook-square"
+    weight = 1
+
+[[params.menu]]
+    name = "GitHub"
+    url  = "https://www.facebook.com/tepachehacklab/?fref=ts"
+    fa   = "fa-github"
+    weight = 2
+
+[[params.menu]]
+    name = "YouTube"
+    url  = "https://www.youtube.com/watch?v=FVjCjC4zDtQ"
+    fa   = "fa-youtube"
+    weight = 3
+
+##########################################################
+################==> parallax settings  <==################
+[[ params.parallax_settings]]
+	img_background = ""
+	img_principal  = ""
+	title          = "TepacheHackLab"
+	text           = "Esto es una prueba en la cual se muestra una breve explicación de que es esto y como se usa esto para aquello que no se que se jaja ya se me olvido :D"
+
+#You can add buttons. Look at the example
+#the type of button can be btn-simple or btn-fill
+[[ params.add_button]]
+	type_button = "btn-simple" 
+	text_button = ""
+	fa_awesome  = "fa-android"
+	color       = ""
+	link        = ""
+
+[[ params.add_button]]
+	type_button = "btn-fill" 
+	text_button = "Android Device"
+	fa_awesome  = "fa-android"
+	color       = ""
+	link        = ""
+
+[[ params.add_button]]
+	type_button = "btn-fill" 
+	text_button = "ff"
+	fa_awesome  = "fa-apple"
+	color       = ""
+	link        = ""
+
+##########################################################
+################==> clients settings  <==#################
+[[ params.clients_settings]]
+	title = "Esto es la sección de clientes"
+	text  = "Esto es una prueba para ver la sección de clientes"
+
+#You can add logos customer
+[[ params.add_logo_cliente ]]
+	img  = "img/logos/adobe.png"
+	link = ""
+
+[[ params.add_logo_cliente ]]
+	img  = "img/logos/zendesk.png"
+	link = ""
+
+[[ params.add_logo_cliente ]]
+	img  = "img/logos/ebay.png"
+	link = ""
+
+[[ params.add_logo_cliente ]]
+	img  = "img/logos/evernote.png"
+	link = ""
+
+[[ params.add_logo_cliente ]]
+	img  = "img/logos/airbnb.png"
+	link = ""
+
+[[ params.add_logo_cliente ]]
+	img  = "img/logos/zappos.png"
+	link = ""
+
+##########################################################
+
+
+
+
+
+
+
